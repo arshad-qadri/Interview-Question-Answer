@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is JavaScript?",
+    "answer": "JavaScript is a versatile, interpreted programming language primarily used for web development to create interactive effects within browsers.",
+    "code": ""
+  },
+  {
+    "id": 2,
+    "question": "What are the different data types present in JavaScript?",
+    "answer": "JavaScript has primitive types such as String, Number, Boolean, Null, Undefined, Symbol, BigInt, and non-primitive types like Object.",
+    "code": ""
+  },
+  {
+    "id": 3,
+    "question": "Explain let, const, and var in JavaScript.",
+    "answer": "`var` is function-scoped, `let` and `const` are block-scoped. `const` is used for variables whose values should not be reassigned.",
+    "code": ""
+  },
+  {
+    "id": 4,
+    "question": "What is a closure in JavaScript?",
+    "answer": "A closure is a function that has access to its own scope, the outer function's scope, and the global scope even after the outer function has returned.",
+    "code": "function outer() {\n  let count = 0;\n  return function inner() {\n    count++;\n    return count;\n  };\n}"
+  },
+  {
+    "id": 5,
+    "question": "What is the difference between == and === in JavaScript?",
+    "answer": "`==` checks for equality with type coercion, while `===` checks for strict equality without type coercion.",
+    "code": ""
+  },
+  {
+    "id": 6,
+    "question": "What is event delegation?",
+    "answer": "Event delegation is a technique of handling events at a higher level in the DOM rather than adding event listeners to individual nodes.",
+    "code": ""
+  },
+  {
+    "id": 7,
+    "question": "What is the 'this' keyword in JavaScript?",
+    "answer": "`this` refers to the object from which the function was called, and its value depends on how a function is invoked.",
+    "code": ""
+  },
+  {
+    "id": 8,
+    "question": "What are arrow functions?",
+    "answer": "Arrow functions are a shorter syntax for writing functions and do not have their own `this` binding.",
+    "code": "const add = (a, b) => a + b;"
+  },
+  {
+    "id": 9,
+    "question": "Explain promises in JavaScript.",
+    "answer": "A promise represents a value which may be available now, or in the future, or never. It allows asynchronous code to be written more cleanly.",
+    "code": "const promise = new Promise((resolve, reject) => {\n  // async operation\n});"
+  },
+  {
+    "id": 10,
+    "question": "What is async/await?",
+    "answer": "Async/await is syntax to handle promises in a more synchronous-looking fashion, making asynchronous code easier to write and read.",
+    "code": "async function fetchData() {\n  const response = await fetch('url');\n  const data = await response.json();\n  return data;\n}"
+  },
+  {
+    "id": 11,
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope before code execution.",
+    "code": ""
+  },
+  {
+    "id": 12,
+    "question": "What are IIFE (Immediately Invoked Function Expressions)?",
+    "answer": "An IIFE is a function that runs as soon as it is defined.",
+    "code": "(function() {\n  console.log('IIFE ran');\n})();"
+  },
+  {
+    "id": 13,
+    "question": "What is the difference between null and undefined?",
+    "answer": "`null` is an assignment value meaning 'no value'. `undefined` means a variable has been declared but not assigned a value.",
+    "code": ""
+  },
+  {
+    "id": 14,
+    "question": "What is the event loop in JavaScript?",
+    "answer": "The event loop handles asynchronous callbacks by placing them in a queue and executing them when the call stack is empty.",
+    "code": ""
+  },
+  {
+    "id": 15,
+    "question": "What is a callback function?",
+    "answer": "A callback is a function passed into another function as an argument to be executed later.",
+    "code": ""
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between synchronous and asynchronous programming?",
+    "answer": "Synchronous code runs sequentially, blocking further execution until the current operation finishes. Asynchronous code runs independently, allowing other code to run before completion.",
+    "code": ""
+  },
+  {
+    "id": 17,
+    "question": "What are template literals?",
+    "answer": "Template literals allow embedded expressions and multi-line strings, enclosed in backticks (``).",
+    "code": "const name = 'John';\nconst greeting = `Hello, ${name}!`;"
+  },
+  {
+    "id": 18,
+    "question": "What are JavaScript modules?",
+    "answer": "Modules allow code to be separated into reusable files with `export` and `import` statements.",
+    "code": "export const add = (a, b) => a + b;\nimport { add } from './math.js';"
+  },
+  {
+    "id": 19,
+    "question": "What is the difference between call, apply, and bind?",
+    "answer": "`call` and `apply` invoke functions with a specified `this` context immediately, with arguments passed differently. `bind` returns a new function with bound context.",
+    "code": ""
+  },
+  {
+    "id": 20,
+    "question": "What is the spread operator?",
+    "answer": "The spread operator `...` allows iterables to be expanded into individual elements.",
+    "code": "const arr1 = [1, 2];\nconst arr2 = [...arr1, 3, 4];"
+  },
+  {
+    "id": 21,
+    "question": "What are default parameters?",
+    "answer": "Default parameters allow named parameters to be initialized with default values if no value or undefined is passed.",
+    "code": "function greet(name = 'Guest') {\n  return `Hello, ${name}`;\n}"
+  },
+  {
+    "id": 22,
+    "question": "What is destructuring assignment?",
+    "answer": "Destructuring allows unpacking values from arrays or properties from objects into distinct variables.",
+    "code": "const [a, b] = [1, 2];\nconst {name, age} = {name: 'John', age: 30};"
+  },
+  {
+    "id": 23,
+    "question": "What is the difference between an object and a Map?",
+    "answer": "Objects have string/symbol keys and prototype inheritance. Maps allow keys of any type and maintain insertion order.",
+    "code": ""
+  },
+  {
+    "id": 24,
+    "question": "What is NaN in JavaScript?",
+    "answer": "NaN stands for 'Not-a-Number', a value representing an invalid number operation.",
+    "code": "console.log(typeof NaN); // 'number'"
+  },
+  {
+    "id": 25,
+    "question": "How do you check if a variable is an array?",
+    "answer": "Use `Array.isArray(variable)` to check if a variable is an array.",
+    "code": "Array.isArray([1, 2, 3]); // true"
+  },
+  {
+    "id": 26,
+    "question": "What is prototypal inheritance?",
+    "answer": "Objects inherit properties and methods from a prototype object.",
+    "code": ""
+  },
+  {
+    "id": 27,
+    "question": "What is the difference between function declaration and function expression?",
+    "answer": "Function declarations are hoisted and can be called before defined. Function expressions are not hoisted.",
+    "code": ""
+  },
+  {
+    "id": 28,
+    "question": "What are generators in JavaScript?",
+    "answer": "Generators are functions that can be paused and resumed, using `function*` and `yield`.",
+    "code": "function* gen() {\n  yield 1;\n  yield 2;\n}"
+  },
+  {
+    "id": 29,
+    "question": "What is the purpose of the 'new' keyword?",
+    "answer": "`new` creates an instance of an object from a constructor function.",
+    "code": "function Person(name) {\n  this.name = name;\n}\nconst p = new Person('John');"
+  },
+  {
+    "id": 30,
+    "question": "What is the difference between shallow copy and deep copy?",
+    "answer": "Shallow copy copies object references, deep copy duplicates all nested objects.",
+    "code": ""
+  },
+  {
+    "id": 31,
+    "question": "What is the difference between localStorage and sessionStorage?",
+    "answer": "`localStorage` stores data with no expiration. `sessionStorage` stores data for one session/tab only.",
+    "code": ""
+  },
+  {
+    "id": 32,
+    "question": "What is event bubbling?",
+    "answer": "Event bubbling is the process where an event propagates from the deepest target element up to its ancestors.",
+    "code": ""
+  },
+  {
+    "id": 33,
+    "question": "What is a promise chain?",
+    "answer": "A promise chain is a sequence of `.then()` calls, where the output of one is passed to the next.",
+    "code": ""
+  },
+  {
+    "id": 34,
+    "question": "What is the difference between setTimeout and setInterval?",
+    "answer": "`setTimeout` runs a function once after delay; `setInterval` runs repeatedly at intervals.",
+    "code": ""
+  },
+  {
+    "id": 35,
+    "question": "What is a Symbol in JavaScript?",
+    "answer": "Symbols are unique and immutable primitive values used as unique object keys.",
+    "code": "const sym = Symbol('desc');"
+  },
+  {
+    "id": 36,
+    "question": "What are template strings and how do you use them?",
+    "answer": "Template strings allow embedding variables and expressions inside backticks `` with `${}` syntax.",
+    "code": "const a = 10;\nconst b = 20;\nconsole.log(`${a} + ${b} = ${a + b}`);"
+  },
+  {
+    "id": 37,
+    "question": "What is the difference between synchronous and asynchronous code?",
+    "answer": "Synchronous code executes sequentially. Asynchronous code runs in the background allowing other operations to continue.",
+    "code": ""
+  },
+  {
+    "id": 38,
+    "question": "What is the purpose of the 'void' operator?",
+    "answer": "The `void` operator evaluates an expression and returns `undefined`.",
+    "code": "void someFunction();"
+  },
+  {
+    "id": 39,
+    "question": "What are truthy and falsy values in JavaScript?",
+    "answer": "Truthy values evaluate to true in boolean context; falsy values evaluate to false (e.g., 0, '', null, undefined, NaN, false).",
+    "code": ""
+  },
+  {
+    "id": 40,
+    "question": "What is the difference between an array and an object?",
+    "answer": "Arrays are ordered collections indexed by numbers; objects are key-value pairs with string/symbol keys.",
+    "code": ""
+  },
+  {
+    "id": 41,
+    "question": "What is memoization?",
+    "answer": "Memoization is an optimization technique to cache function results for faster subsequent calls.",
+    "code": "const memo = {};\nfunction fib(n) {\n  if (n <= 1) return n;\n  if (memo[n]) return memo[n];\n  return memo[n] = fib(n-1) + fib(n-2);\n}"
+  },
+  {
+    "id": 42,
+    "question": "What are template literals used for?",
+    "answer": "To create strings with embedded expressions and multiline strings more easily.",
+    "code": "const name = 'World';\nconsole.log(`Hello, ${name}!`);"
+  },
+  {
+    "id": 43,
+    "question": "Explain the difference between map and forEach.",
+    "answer": "`map` returns a new array with the results; `forEach` executes a function on each element without returning.",
+    "code": ""
+  },
+  {
+    "id": 44,
+    "question": "What is the purpose of the array reduce method?",
+    "answer": "`reduce` applies a function to accumulate a single result from an array.",
+    "code": "const sum = [1,2,3].reduce((acc, val) => acc + val, 0);"
+  },
+  {
+    "id": 45,
+    "question": "What is the difference between function and arrow function regarding 'this'?",
+    "answer": "Arrow functions do not have their own `this`; they inherit from the parent scope. Functions have their own `this`.",
+    "code": ""
+  },
+  {
+    "id": 46,
+    "question": "What is the typeof operator?",
+    "answer": "`typeof` returns a string indicating the type of the unevaluated operand.",
+    "code": "typeof 42; // 'number'"
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between prototype and __proto__?",
+    "answer": "`prototype` is a property of constructor functions; `__proto__` is the internal link to the prototype of an object.",
+    "code": ""
+  },
+  {
+    "id": 48,
+    "question": "What is the purpose of the 'new.target' property?",
+    "answer": "`new.target` lets you detect whether a function or constructor was called with the `new` keyword.",
+    "code": ""
+  },
+  {
+    "id": 49,
+    "question": "What are WeakMap and WeakSet?",
+    "answer": "Collections that hold weak references to objects, allowing garbage collection when there are no other references.",
+    "code": ""
+  },
+  {
+    "id": 50,
+    "question": "What is the event capturing phase?",
+    "answer": "Event capturing is the phase where events propagate from the window down to the target element before bubbling.",
+    "code": ""
+  }
+]

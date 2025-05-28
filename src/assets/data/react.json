@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "question": "What is React?",
+    "answer": "React is a JavaScript library for building user interfaces, maintained by Facebook.",
+    "code": ""
+  },
+  {
+    "id": 2,
+    "question": "What are components in React?",
+    "answer": "Components are the building blocks of React apps. They can be functional or class-based and return JSX to render UI.",
+    "code": ""
+  },
+  {
+    "id": 3,
+    "question": "What is JSX?",
+    "answer": "JSX is a syntax extension for JavaScript that looks like HTML and is used with React to describe UI structure.",
+    "code": ""
+  },
+  {
+    "id": 4,
+    "question": "What is the difference between state and props?",
+    "answer": "State is managed within a component and can change over time. Props are read-only inputs passed from parent to child components.",
+    "code": ""
+  },
+  {
+    "id": 5,
+    "question": "What is the virtual DOM?",
+    "answer": "The virtual DOM is a lightweight copy of the real DOM that React uses to optimize updates and rendering.",
+    "code": ""
+  },
+  {
+    "id": 6,
+    "question": "Explain the lifecycle methods of a React class component.",
+    "answer": "Lifecycle methods include mounting (constructor, componentDidMount), updating (componentDidUpdate), and unmounting (componentWillUnmount).",
+    "code": ""
+  },
+  {
+    "id": 7,
+    "question": "What are React hooks?",
+    "answer": "Hooks are functions that let you use state and other React features in functional components.",
+    "code": ""
+  },
+  {
+    "id": 8,
+    "question": "What is useState?",
+    "answer": "`useState` is a hook that lets you add state to functional components.",
+    "code": "const [count, setCount] = React.useState(0);"
+  },
+  {
+    "id": 9,
+    "question": "What is useEffect?",
+    "answer": "`useEffect` lets you perform side effects like data fetching or subscriptions in functional components.",
+    "code": "React.useEffect(() => {\n  // side effect code\n}, []);"
+  },
+  {
+    "id": 10,
+    "question": "What is the significance of keys in React lists?",
+    "answer": "Keys help React identify which items have changed, added, or removed for efficient re-rendering.",
+    "code": ""
+  },
+  {
+    "id": 11,
+    "question": "How do you handle events in React?",
+    "answer": "Events are handled using camelCase props and passing functions, e.g. `<button onClick={handleClick}>`.",
+    "code": ""
+  },
+  {
+    "id": 12,
+    "question": "What is context in React?",
+    "answer": "Context provides a way to pass data through the component tree without prop drilling.",
+    "code": "const MyContext = React.createContext();"
+  },
+  {
+    "id": 13,
+    "question": "What is Redux?",
+    "answer": "Redux is a state management library often used with React to manage global app state.",
+    "code": ""
+  },
+  {
+    "id": 14,
+    "question": "What is the difference between controlled and uncontrolled components?",
+    "answer": "Controlled components get their value from React state; uncontrolled components manage their own internal state.",
+    "code": ""
+  },
+  {
+    "id": 15,
+    "question": "What are higher-order components (HOCs)?",
+    "answer": "HOCs are functions that take a component and return a new component with added functionality.",
+    "code": ""
+  },
+  {
+    "id": 16,
+    "question": "What is React Router?",
+    "answer": "React Router is a library for managing navigation and routing in React apps.",
+    "code": ""
+  },
+  {
+    "id": 17,
+    "question": "What is reconciliation in React?",
+    "answer": "Reconciliation is React's process of updating the DOM by comparing the virtual DOM with the real DOM.",
+    "code": ""
+  },
+  {
+    "id": 18,
+    "question": "What is memoization in React?",
+    "answer": "Memoization optimizes performance by caching components or functions to prevent unnecessary re-renders.",
+    "code": "const MemoComp = React.memo(MyComponent);"
+  },
+  {
+    "id": 19,
+    "question": "What is the difference between React.memo and useMemo?",
+    "answer": "`React.memo` memoizes components, `useMemo` memoizes values inside components.",
+    "code": ""
+  },
+  {
+    "id": 20,
+    "question": "What is useCallback?",
+    "answer": "`useCallback` returns a memoized callback function to prevent unnecessary re-creation.",
+    "code": "const memoizedCallback = React.useCallback(() => {\n  doSomething();\n}, [dependencies]);"
+  },
+  {
+    "id": 21,
+    "question": "How do you optimize performance in React?",
+    "answer": "Use memoization, code-splitting, lazy loading, avoiding unnecessary re-renders, and virtualization.",
+    "code": ""
+  },
+  {
+    "id": 22,
+    "question": "What are fragments in React?",
+    "answer": "Fragments let you group multiple elements without adding extra nodes to the DOM.",
+    "code": "<>\n  <p>First</p>\n  <p>Second</p>\n</>"
+  },
+  {
+    "id": 23,
+    "question": "What is prop drilling?",
+    "answer": "Prop drilling is passing props through many nested components, which can be avoided using context.",
+    "code": ""
+  },
+  {
+    "id": 24,
+    "question": "How does React handle forms?",
+    "answer": "React handles forms via controlled or uncontrolled components and state management.",
+    "code": ""
+  },
+  {
+    "id": 25,
+    "question": "What is the use of refs in React?",
+    "answer": "Refs provide a way to access DOM nodes or React elements directly.",
+    "code": "const myRef = React.useRef(null);"
+  },
+  {
+    "id": 26,
+    "question": "What is the difference between class and functional components?",
+    "answer": "Class components have lifecycle methods and state, functional components use hooks for similar capabilities.",
+    "code": ""
+  },
+  {
+    "id": 27,
+    "question": "What are error boundaries?",
+    "answer": "Error boundaries catch JavaScript errors in child components and display a fallback UI.",
+    "code": "class ErrorBoundary extends React.Component {\n  componentDidCatch(error, info) {\n    // handle error\n  }\n  render() {\n    return this.props.children;\n  }\n}"
+  },
+  {
+    "id": 28,
+    "question": "What is reconciliation?",
+    "answer": "React compares the new virtual DOM with the previous one to efficiently update the real DOM.",
+    "code": ""
+  },
+  {
+    "id": 29,
+    "question": "What are synthetic events in React?",
+    "answer": "Synthetic events are React's cross-browser wrapper around native browser events.",
+    "code": ""
+  },
+  {
+    "id": 30,
+    "question": "What is the purpose of useReducer?",
+    "answer": "`useReducer` is an alternative to `useState` for complex state logic.",
+    "code": "const [state, dispatch] = React.useReducer(reducer, initialState);"
+  },
+  {
+    "id": 31,
+    "question": "What is lazy loading in React?",
+    "answer": "Lazy loading delays component loading until it's needed using `React.lazy` and `Suspense`.",
+    "code": "const OtherComponent = React.lazy(() => import('./OtherComponent'));"
+  },
+  {
+    "id": 32,
+    "question": "How do you handle side effects in React?",
+    "answer": "Side effects are handled using the `useEffect` hook.",
+    "code": ""
+  },
+  {
+    "id": 33,
+    "question": "What is reconciliation?",
+    "answer": "Reconciliation is React’s diffing algorithm to update the DOM efficiently.",
+    "code": ""
+  },
+  {
+    "id": 34,
+    "question": "What is the difference between useEffect and useLayoutEffect?",
+    "answer": "`useEffect` runs after render, `useLayoutEffect` runs synchronously after all DOM mutations.",
+    "code": ""
+  },
+  {
+    "id": 35,
+    "question": "What is the role of keys in React?",
+    "answer": "Keys help React identify elements uniquely to optimize re-rendering in lists.",
+    "code": ""
+  },
+  {
+    "id": 36,
+    "question": "How can you prevent re-rendering in React components?",
+    "answer": "Use memoization techniques like `React.memo`, `useMemo`, and `useCallback`.",
+    "code": ""
+  },
+  {
+    "id": 37,
+    "question": "What are portals in React?",
+    "answer": "Portals allow rendering children into a DOM node outside the parent component’s DOM hierarchy.",
+    "code": "ReactDOM.createPortal(child, domNode);"
+  },
+  {
+    "id": 38,
+    "question": "What is the difference between controlled and uncontrolled inputs?",
+    "answer": "Controlled inputs have their state managed by React, uncontrolled inputs manage their own state.",
+    "code": ""
+  },
+  {
+    "id": 39,
+    "question": "What is React Strict Mode?",
+    "answer": "Strict Mode is a tool for highlighting potential problems in an application during development.",
+    "code": "<React.StrictMode>...</React.StrictMode>"
+  },
+  {
+    "id": 40,
+    "question": "What is reconciliation in React?",
+    "answer": "It’s the process React uses to update the DOM efficiently by comparing virtual DOM trees.",
+    "code": ""
+  },
+  {
+    "id": 41,
+    "question": "What is the Context API?",
+    "answer": "Context API provides a way to pass data globally without passing props manually at every level.",
+    "code": ""
+  },
+  {
+    "id": 42,
+    "question": "What is the purpose of useImperativeHandle?",
+    "answer": "It customizes the instance value that is exposed when using `ref` in a parent component.",
+    "code": ""
+  },
+  {
+    "id": 43,
+    "question": "What is reconciliation in React?",
+    "answer": "It’s React’s diffing algorithm for updating the DOM efficiently.",
+    "code": ""
+  },
+  {
+    "id": 44,
+    "question": "What are the benefits of using React?",
+    "answer": "Reusable components, virtual DOM, unidirectional data flow, and a strong community.",
+    "code": ""
+  },
+  {
+    "id": 45,
+    "question": "What is the use of React.PureComponent?",
+    "answer": "PureComponent automatically implements `shouldComponentUpdate` with a shallow prop and state comparison.",
+    "code": ""
+  },
+  {
+    "id": 46,
+    "question": "What is reconciliation?",
+    "answer": "React’s process to update the real DOM by comparing it with the virtual DOM.",
+    "code": ""
+  },
+  {
+    "id": 47,
+    "question": "What is the difference between React.Component and React.PureComponent?",
+    "answer": "PureComponent implements a shallow prop and state comparison to reduce re-renders; Component doesn’t.",
+    "code": ""
+  },
+  {
+    "id": 48,
+    "question": "What is prop drilling and how to avoid it?",
+    "answer": "Passing props through many levels; can be avoided with Context API or state management libraries.",
+    "code": ""
+  },
+  {
+    "id": 49,
+    "question": "What is server-side rendering (SSR) in React?",
+    "answer": "Rendering React components on the server to send fully rendered HTML to the client.",
+    "code": ""
+  },
+  {
+    "id": 50,
+    "question": "What is hydration in React?",
+    "answer": "Hydration is attaching React event listeners to the server-rendered HTML on the client side.",
+    "code": ""
+  }
+]

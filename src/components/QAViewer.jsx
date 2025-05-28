@@ -37,10 +37,12 @@ const QAViewer = () => {
             key={id}
             className="p-4 border rounded shadow bg-gray-50 hover:bg-gray-100 transition"
           >
-            <h2 className="font-semibold text-xl">
+            <h2 className="font-semibold text-xl text-left">
               {id}. {question}
             </h2>
-            <p className="mt-2 text-gray-700 whitespace-pre-line">{answer}</p>
+            <p className="mt-2 text-gray-700 whitespace-pre-line text-left">
+              {answer}
+            </p>
             {code && (
               <SyntaxHighlighter
                 language={selectedCategory === "js" ? "javascript" : "jsx"}

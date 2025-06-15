@@ -2,301 +2,302 @@
   {
     "id": 1,
     "question": "What is Next.js?",
-    "answer": "Next.js is a React framework that enables server-side rendering and static site generation for React apps.",
+    "answer": "Next.js is a React-based framework that helps you build web applications with features like server-side rendering (SSR), static site generation (SSG), and API routes. It improves performance and SEO while simplifying the development process.",
     "code": ""
   },
   {
     "id": 2,
     "question": "What are the main features of Next.js?",
-    "answer": "Features include SSR, SSG, API routes, file-based routing, automatic code splitting, and built-in CSS support.",
+    "answer": "Main features include: server-side rendering (SSR), static site generation (SSG), API routes, file-based routing, image optimization, TypeScript support, fast refresh, automatic code splitting, and middleware.",
     "code": ""
   },
   {
     "id": 3,
     "question": "What is server-side rendering (SSR) in Next.js?",
-    "answer": "SSR renders the page on the server on each request and sends fully rendered HTML to the client.",
+    "answer": "SSR means the HTML of the page is generated on the server each time a user makes a request. This helps with SEO and gives users fast, fully-rendered pages.",
     "code": ""
   },
   {
     "id": 4,
     "question": "What is static site generation (SSG) in Next.js?",
-    "answer": "SSG pre-renders pages at build time, generating static HTML files served to the client.",
+    "answer": "SSG means pages are generated as static HTML files at build time. They are then served to users quickly from a CDN, improving performance and reducing server load.",
     "code": ""
   },
   {
     "id": 5,
     "question": "What is Incremental Static Regeneration (ISR)?",
-    "answer": "ISR allows static pages to be updated after build time by re-generating them in the background.",
+    "answer": "ISR allows you to update static pages after the site is built. It rebuilds pages in the background when new data is needed, without rebuilding the whole site.",
     "code": ""
   },
   {
     "id": 6,
     "question": "What is the difference between getStaticProps and getServerSideProps?",
-    "answer": "`getStaticProps` runs at build time for SSG; `getServerSideProps` runs on each request for SSR.",
+    "answer": "getStaticProps runs at build time and is used for SSG. getServerSideProps runs on each request and is used for SSR. Choose based on whether your data changes often or not.",
     "code": ""
   },
   {
     "id": 7,
     "question": "What is getStaticPaths?",
-    "answer": "`getStaticPaths` is used with dynamic routes to specify which paths to pre-render at build time.",
+    "answer": "getStaticPaths is used with dynamic routes during static generation. It tells Next.js which paths to pre-render at build time.",
     "code": ""
   },
   {
     "id": 8,
     "question": "How does file-based routing work in Next.js?",
-    "answer": "Pages in the `pages` directory automatically become routes based on their file name and folder structure.",
+    "answer": "Each file inside the `pages` or `app` directory automatically becomes a route. The folder and file names define the URL paths.",
     "code": ""
   },
   {
     "id": 9,
     "question": "What are API routes in Next.js?",
-    "answer": "API routes let you create serverless API endpoints inside the `pages/api` directory.",
+    "answer": "API routes allow you to build backend functions (like handling form submissions or fetching data) inside the `pages/api` directory.",
     "code": ""
   },
   {
     "id": 10,
     "question": "What is middleware in Next.js?",
-    "answer": "Middleware runs before a request is completed, allowing you to modify responses or perform redirects.",
+    "answer": "Middleware runs before the request reaches the route. It can be used for authentication, redirects, logging, and more.",
     "code": ""
   },
   {
     "id": 11,
     "question": "What is the App Router in Next.js 13?",
-    "answer": "App Router is the new routing system introduced in Next.js 13 that supports layouts, server components, and nested routes.",
+    "answer": "The App Router is a new routing system that uses the `app` directory. It supports layouts, nested routing, and React Server Components for better performance and flexibility.",
     "code": ""
   },
   {
     "id": 12,
     "question": "What are server components in Next.js?",
-    "answer": "Server components run only on the server and can fetch data directly without sending extra JavaScript to the client.",
+    "answer": "Server components run only on the server. They do not include client-side JavaScript, making the app faster and smaller in size.",
     "code": ""
   },
   {
     "id": 13,
     "question": "What are client components in Next.js?",
-    "answer": "Client components run in the browser and can use hooks and browser APIs.",
+    "answer": "Client components run in the browser and can use state, effects, and event handlers. They are useful for interactive UI parts.",
     "code": ""
   },
   {
     "id": 14,
     "question": "How do you handle environment variables in Next.js?",
-    "answer": "Use `.env.local` files with variable names prefixed by `NEXT_PUBLIC_` to expose them to the client.",
+    "answer": "Use `.env.local` to define environment variables. If you want to use them on the client, prefix them with `NEXT_PUBLIC_`.",
     "code": ""
   },
   {
     "id": 15,
     "question": "How do you implement dynamic routing in Next.js?",
-    "answer": "By creating files or folders with square brackets like `[id].js` inside the `pages` or `app` directory.",
+    "answer": "Create files or folders with square brackets (e.g., `[id].js`) inside the `pages` or `app` directory to handle dynamic routes.",
     "code": ""
   },
   {
     "id": 16,
     "question": "What is the difference between client-side navigation and server-side navigation in Next.js?",
-    "answer": "Client-side navigation uses the Next.js router to navigate without full page reload; server-side navigation reloads the page.",
+    "answer": "Client-side navigation uses Next.js's router to change pages without a full reload, making it faster. Server-side navigation reloads the page from the server.",
     "code": ""
   },
   {
     "id": 17,
     "question": "What is Image Optimization in Next.js?",
-    "answer": "Next.js automatically optimizes images via the `next/image` component with resizing, lazy loading, and more.",
+    "answer": "Using the `next/image` component, Next.js automatically resizes, compresses, and lazy-loads images to improve performance.",
     "code": ""
   },
   {
     "id": 18,
     "question": "How can you add global CSS in Next.js?",
-    "answer": "Import your global CSS file in the custom `_app.js` or `layout.js` component.",
+    "answer": "Import your global CSS file inside the custom `_app.js` or `layout.js` component, which wraps all pages.",
     "code": ""
   },
   {
     "id": 19,
     "question": "What is the purpose of the `_app.js` file?",
-    "answer": "It customizes the root component that wraps all pages and is useful for global state, layouts, or styles.",
+    "answer": "`_app.js` is the root component for all pages. You can use it to apply global styles, layouts, or shared components like headers.",
     "code": ""
   },
   {
     "id": 20,
     "question": "What is the `_document.js` file used for?",
-    "answer": "It allows customizing the HTML document structure, e.g., adding lang attribute or meta tags.",
+    "answer": "`_document.js` allows customization of the entire HTML document structure (like `<html>` and `<body>` tags). You can add meta tags or set the language.",
     "code": ""
   },
   {
     "id": 21,
     "question": "How do you fetch data in Next.js pages?",
-    "answer": "Using data fetching methods like `getStaticProps`, `getServerSideProps`, or client-side fetching with hooks.",
+    "answer": "You can fetch data using `getStaticProps`, `getServerSideProps`, or client-side fetching using React hooks like `useEffect` and `fetch`.",
     "code": ""
   },
   {
     "id": 22,
     "question": "What are the benefits of using ISR over SSR?",
-    "answer": "ISR provides static site performance with the ability to update pages on-demand, unlike SSR which renders on each request.",
+    "answer": "ISR gives you the performance of static pages with the flexibility to update them after deployment, unlike SSR which regenerates pages on every request.",
     "code": ""
   },
   {
     "id": 23,
     "question": "How do you protect routes in Next.js?",
-    "answer": "By using middleware, higher-order components, or client-side checks with authentication state.",
+    "answer": "You can protect routes using middleware, authentication checks in components, or higher-order components (HOCs).",
     "code": ""
   },
   {
     "id": 24,
     "question": "How does Next.js support internationalization (i18n)?",
-    "answer": "Next.js has built-in i18n routing support configured in `next.config.js`.",
+    "answer": "Next.js supports i18n routing. You can define supported languages and default locale in `next.config.js`.",
     "code": ""
   },
   {
     "id": 25,
     "question": "What is the difference between static and dynamic imports in Next.js?",
-    "answer": "Static imports load modules at build time, dynamic imports load modules asynchronously to split code.",
+    "answer": "Static imports load modules at build time. Dynamic imports load them only when needed, helping with code splitting and performance.",
     "code": ""
   },
   {
     "id": 26,
     "question": "What is the role of `next.config.js`?",
-    "answer": "It configures Next.js features like rewrites, redirects, environment variables, and build optimizations.",
+    "answer": "It is used to customize the behavior of your Next.js app. You can set environment variables, enable image domains, redirects, rewrites, and modify the build process.",
     "code": ""
   },
   {
     "id": 27,
     "question": "How do you handle errors in Next.js API routes?",
-    "answer": "By returning appropriate HTTP status codes and messages in the API handler functions.",
+    "answer": "Use try-catch blocks to catch errors, and return proper HTTP status codes like 400 or 500 with a helpful error message.",
     "code": ""
   },
   {
     "id": 28,
     "question": "What is the `next/head` component used for?",
-    "answer": "It manages the document head for adding meta tags, titles, and other head elements per page.",
+    "answer": "`next/head` lets you modify the `<head>` of a page, such as adding titles, meta tags, and custom styles.",
     "code": ""
   },
   {
     "id": 29,
     "question": "How can you implement middleware redirects in Next.js?",
-    "answer": "Using the `NextResponse.redirect()` method inside the middleware function.",
+    "answer": "Use the `NextResponse.redirect()` function inside the middleware file to redirect users based on conditions.",
     "code": ""
   },
   {
     "id": 30,
     "question": "What is the difference between `getStaticProps` and client-side data fetching?",
-    "answer": "`getStaticProps` fetches data at build time; client-side fetching happens in the browser after page load.",
+    "answer": "`getStaticProps` fetches data at build time on the server. Client-side fetching happens in the browser after the page loads.",
     "code": ""
   },
   {
     "id": 31,
     "question": "How does Next.js handle CSS modules?",
-    "answer": "CSS modules are supported out of the box and scoped locally by naming files as `*.module.css`.",
+    "answer": "CSS Modules are supported by default. You can create files like `style.module.css`, and the styles will be scoped to the component.",
     "code": ""
   },
   {
     "id": 32,
     "question": "How do you implement authentication in Next.js?",
-    "answer": "Using libraries like NextAuth.js or custom JWT implementations with API routes.",
+    "answer": "You can use libraries like NextAuth.js for OAuth/JWT or create your own system using API routes and session tokens.",
     "code": ""
   },
   {
     "id": 33,
     "question": "What is Fast Refresh in Next.js?",
-    "answer": "Fast Refresh allows instant feedback while editing React components without losing state.",
+    "answer": "Fast Refresh automatically updates the browser in development whenever you save a file, without losing component state.",
     "code": ""
   },
   {
     "id": 34,
     "question": "How can you customize the build output in Next.js?",
-    "answer": "By configuring options in `next.config.js` such as webpack customizations or output directory.",
+    "answer": "You can customize the build by modifying `next.config.js`, using custom Webpack settings, or changing the output directory.",
     "code": ""
   },
   {
     "id": 35,
     "question": "How do you add custom fonts in Next.js?",
-    "answer": "By importing fonts in global CSS or using the built-in `next/font` module.",
+    "answer": "You can use the `next/font` module for performance or import fonts in CSS from Google Fonts or local files.",
     "code": ""
   },
   {
     "id": 36,
     "question": "What is the difference between static generation and client-side rendering in Next.js?",
-    "answer": "Static generation pre-renders HTML at build time; client-side rendering generates HTML in the browser.",
+    "answer": "Static generation happens at build time on the server. Client-side rendering happens in the browser after the page loads.",
     "code": ""
   },
   {
     "id": 37,
     "question": "What is the `useRouter` hook in Next.js?",
-    "answer": "`useRouter` provides access to the router object to navigate and read route info.",
+    "answer": "`useRouter` gives you access to the router object so you can programmatically navigate between pages or read route parameters.",
     "code": "import { useRouter } from 'next/router';"
   },
   {
     "id": 38,
     "question": "How do you implement API route middleware in Next.js?",
-    "answer": "By composing middleware functions inside API route handlers.",
+    "answer": "You can create reusable middleware functions and call them inside your API route handlers to validate or transform requests.",
     "code": ""
   },
   {
     "id": 39,
     "question": "How can you enable TypeScript in Next.js?",
-    "answer": "By adding a `tsconfig.json` file and installing TypeScript packages; Next.js detects and configures automatically.",
+    "answer": "Install TypeScript and create a `tsconfig.json` file. Next.js automatically sets up TypeScript support for you.",
     "code": ""
   },
   {
     "id": 40,
     "question": "What is the difference between the Pages Router and the App Router in Next.js?",
-    "answer": "Pages Router is the older file-based routing system; App Router supports nested layouts, server components, and more.",
+    "answer": "The Pages Router uses the `pages` directory and is older. The App Router uses the `app` directory, and supports layouts, loading UI, and server components.",
     "code": ""
   },
   {
     "id": 41,
     "question": "How do you do code splitting in Next.js?",
-    "answer": "Next.js automatically splits code by pages, and dynamic imports can split code at the component level.",
+    "answer": "Next.js automatically splits code by route. You can also use dynamic imports to split components and reduce bundle size.",
     "code": ""
   },
   {
     "id": 42,
     "question": "What is the `next/link` component used for?",
-    "answer": "It enables client-side navigation between routes without full page reload.",
+    "answer": "`next/link` provides client-side navigation between pages, improving performance by avoiding full page reloads.",
     "code": ""
   },
   {
     "id": 43,
     "question": "How do you handle image optimization in Next.js?",
-    "answer": "By using the `next/image` component which provides resizing, lazy loading, and caching.",
+    "answer": "Use the `next/image` component to automatically resize, lazy load, and optimize images for different screen sizes.",
     "code": ""
   },
   {
     "id": 44,
     "question": "What is ISR fallback blocking?",
-    "answer": "Fallback blocking delays the page render until the static page is generated on the first request.",
+    "answer": "When `fallback: 'blocking'` is used in `getStaticPaths`, Next.js waits to generate the page on the first request, then caches it for later use.",
     "code": ""
   },
   {
     "id": 45,
     "question": "How do you export a Next.js app as a static site?",
-    "answer": "By running `next export` after static generation to create static HTML files.",
+    "answer": "Use `next export` after building the app with `next build`. This generates static HTML files that can be hosted anywhere.",
     "code": ""
   },
   {
     "id": 46,
     "question": "What are React Server Components in Next.js?",
-    "answer": "React Server Components allow rendering components entirely on the server to reduce client bundle size.",
+    "answer": "React Server Components render on the server and don’t send their JavaScript to the browser, improving performance and reducing bundle size.",
     "code": ""
   },
   {
     "id": 47,
     "question": "What are the benefits of using Next.js over plain React?",
-    "answer": "Built-in SSR/SSG, routing, API routes, image optimization, and better SEO support.",
+    "answer": "Next.js adds features like routing, SSR/SSG, image optimization, and API routes, making it easier to build fast, SEO-friendly apps.",
     "code": ""
   },
   {
     "id": 48,
     "question": "How do you debug a Next.js app?",
-    "answer": "Using browser devtools, React DevTools, and server-side debugging tools like Node.js inspector.",
+    "answer": "Use browser dev tools, React DevTools, and Node.js debugging tools like the inspector. Also, check console logs and use error boundaries.",
     "code": ""
   },
   {
     "id": 49,
     "question": "What is the difference between getInitialProps and getServerSideProps?",
-    "answer": "`getInitialProps` runs on both server and client, `getServerSideProps` only runs on server at request time.",
+    "answer": "`getInitialProps` can run on both server and client, but is older. `getServerSideProps` only runs on the server for each request and is more efficient.",
     "code": ""
   },
   {
     "id": 50,
     "question": "How do you deploy a Next.js app?",
-    "answer": "You can deploy on Vercel, Netlify, AWS, or any Node.js supported platform with server support for SSR.",
+    "answer": "You can deploy to Vercel (official), Netlify, AWS, or any Node.js server. For static-only apps, use `next export` and deploy to static hosts like GitHub Pages or Cloudflare.",
     "code": ""
   }
 ]
+
